@@ -1,0 +1,176 @@
+{
+  "about": {
+    "first_name": "Marcelo",
+    "last_name": "Ramos-Martins",
+    "domain": "iamramos.tech",
+    "url": "https://iamramos.tech/",
+    "welcome_message": "Hi I am Marcelo",
+    "description": "Software Engineer with fundamental knowledge of full-stack development.",
+    "profile_picture": "https://drive.google.com/file/d/1J0vGoLO2RRS-AQOPnTe8ldKrc8igIffs/view?usp=sharing"
+  },
+  "contact": {
+    "email": "ramos21martins@gmail.com",
+    "phone_number": "+1203-556-3061"
+  },
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/Marcelo61423489",
+      "media": ""
+    },
+    {
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/matxa/",
+      "media": ""
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/matxa/",
+      "media": ""
+    }
+  ],
+  "education": [
+    {
+      "school_name": "Holberton School",
+      "major": "Software Engineering",
+      "location": {
+        "city": "New Haven",
+        "state": ["Connecticut", "CT"],
+        "country": ["United States", "USA"]
+      },
+      "start_date": "September 2019",
+      "end_date": "September 2021",
+      "completed_credits": "N/A",
+      "description": [
+        "Project-based and Peer-learning curriculum",
+        "Low/high level programming and DevOps",
+        "Full-stack web development"
+      ]
+    },
+    {
+      "school_name": "Housatonic Community College",
+      "major": "Computer Information Systems",
+      "location": {
+        "city": "Bridgeport",
+        "state": ["Connecticut", "CT"],
+        "country": ["United States", "USA"]
+      },
+      "start_date": "August 2017",
+      "end_date": "December 2018",
+      "completed_credits": 24,
+      "description": []
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Advanced SQL: Logical Query Processing, Part 1",
+      "issuing_organization": "LinkedIn",
+      "issue_date": "January 2022",
+      "expiration_date": "N/A",
+      "url": "https://www.linkedin.com/learning/certificates/286fe94ad3e513a5d5c69d87520428c874bd8751c188cf7cee82d0581d7b6ea8",
+      "media": "https://drive.google.com/file/d/1bbrlWWL7KaADWI8eifFrw_SNZdpKzEWj/view?usp=sharing"
+    },
+    {
+      "name": "SQL Essential Training",
+      "issuing_organization": "LinkedIn",
+      "issue_date": "December 2021",
+      "expiration_date": "N/A",
+      "url": "https://www.linkedin.com/learning/sql-essential-training-3",
+      "media": "https://drive.google.com/file/d/1WIpM273j4ghEcrEyaRSTVc9UxxcTo0BD/view?usp=sharing"
+    }
+  ],
+  "skills": [
+    "Python",
+    "HTML5",
+    "CSS3",
+    "Sass",
+    "Bootstrap",
+    "Git",
+    "GitHub",
+    "REST API",
+    "GraphQL API",
+    "C Language",
+    "Linux",
+    "Bash",
+    "JavaScript",
+    "SQL",
+    "NoSQL",
+    "MySQL",
+    "MongoDB"
+  ],
+  "languages": [
+    "English",
+    "Portuguese",
+    "Spanish",
+    "Cape Verdean Kriolu"
+  ],
+  "projects": [
+    {
+      "name": "ConTime Web App",
+      "description": "Making it easier for (sub)contractors to manage employees.",
+      "details": [
+        "Developed using: HTML, CSS, JavaScript, Flask, Jinja, Python, MongoDB",
+        "Hosted using Gunicorn and Nginx",
+        "RESTful API developed with Flask and Python",
+        "Website creation using HTML, CSS, JavaScript",
+        "Applied MongoEngine to pull data onto the website from MongoDB Atlas"
+      ],
+      "links": {
+        "github": "https://github.com/matxa/ConTime",
+        "view": "https://www.contime.work/"
+      }
+    },
+    {
+      "name": "SmileSchool Landing Page",
+      "description": "Example of a landing page for a fictional company website.",
+      "details": [
+        "HTML",
+        "CSS",
+        "JavaScript / JQuery",
+        "Bootstrap"
+      ],
+      "links": {
+        "github": "https://github.com/matxa/holberton-smiling-school-javascript",
+        "view": "https://matxa.github.io/holberton-smiling-school-javascript/homepage.html"
+      }
+    },
+    {
+      "name": "Headphones Landing Page",
+      "description": "Example of a landing page for a fictional company website.",
+      "details": [
+        "HTML",
+        "CSS",
+        "JavaScript / JQuery"
+      ],
+      "links": {
+        "github": "https://github.com/matxa/holberton-headphones",
+        "view": "https://matxa.github.io/holberton-headphones"
+      }
+    }
+  ],
+  "employment": [
+    {
+      "name": "Forbes Media",
+      "job_title": "Intern, Full-stack Software Engineer",
+      "location": {
+        "city": "Jersey City",
+        "state": ["New Jersey", "NJ"],
+        "country": ["United States", "USA"],
+        "remote": true
+      },
+      "description": [
+        "Implemented a performance tracker using AngularJs and JavaScript to manage story insights.",
+        "Developed, tested, and updated frontend designs and functionalities",
+        "Corrected API bugs, and deprecated old code",
+        "Analyzed functionality for existing Google Cloud Functions"
+      ],
+      "start_date": "June 2021",
+      "end_date": "August 2021",
+      "url": "https://www.forbes.com/"
+    }
+  ],
+  "resume": {
+    "pdf": "https://drive.google.com/file/d/1zNju7XPy9jgh0NsL4Gn_8OuvnwVlx6nv/view?usp=sharing",
+    "doc": ""
+  }
+}
