@@ -31,7 +31,7 @@ body {
 
 /* Common */
 a {
-    color: rgb(32, 51, 104);
+    color: rgb(63, 92, 174);
     text-decoration: unset;
 }
 
@@ -86,7 +86,7 @@ section {
     justify-content: center;
     margin: 15px 0;
     border-bottom: 1px solid var(--text-color);
-    padding-bottom: 10px;
+    padding-bottom: 50px;
     width: 100%;
 }
 
@@ -120,6 +120,6 @@ section {
     }
 
     section {
-        margin: 5px;
+        padding: 10px;
     }
 }
