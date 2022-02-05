@@ -6,7 +6,7 @@
     "url": "https://iamramos.tech/",
     "welcome_message": "Hi I am Marcelo",
     "description": "Software Engineer with fundamental knowledge of full-stack development.",
-    "profile_picture": "https://drive.google.com/file/d/1J0vGoLO2RRS-AQOPnTe8ldKrc8igIffs/view?usp=sharing"
+    "profile_picture": "https://i.imgur.com/aLKvpno.jpg"
   },
   "contact": {
     "email": "ramos21martins@gmail.com",
@@ -14,17 +14,17 @@
   },
   "links": [
     {
-      "name": "twitter",
+      "name": "Twitter",
       "url": "https://twitter.com/Marcelo61423489",
       "media": ""
     },
     {
-      "name": "linkedin",
+      "name": "Linkedin",
       "url": "https://www.linkedin.com/in/matxa/",
       "media": ""
     },
     {
-      "name": "github",
+      "name": "Github",
       "url": "https://github.com/matxa/",
       "media": ""
     }

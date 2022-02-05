@@ -1,6 +1,11 @@
 doctype html
 head
   title= about.first_name
+  style
+    include portfolio.css
+  meta(charset="UTF-8")
+  meta(http-equiv="X-UA-Compatible", content="IE=edge")
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
 body
   header
@@ -15,6 +20,8 @@ body
         li
           a(href="#skills") Skills
         li
+          a(href="#languages") Languages
+        li
           a(href="#projects") Projects
         li
           a(href="#education") Education
@@ -25,103 +32,103 @@ body
         li
           a(href="#resume") Resume
 
-  section#about
-    div.about_div
-      img(src=about.profile_picture, alt="marcelo")
-      h2= about.welcome_message
-      p= about.description
+  main
+    section#about
+      div.about_div
+        img(src=about.profile_picture, alt="marcelo", class="profile_picture")
+        h2= about.welcome_message
+        p= about.description
 
-  section#contact
-    div.contact_div
-      h2= "Contact"
-      p= "Email: "
-        a(class='email', href='mailto:' + contact.email) !{contact.email}
-      p= "Phone Number: "
-        a(class='phone_number', href='tel:' + contact.phone_number) !{contact.phone_number}
+    section#contact
+      div.contact_div
+        h2= "Contact"
+        p= "Email: "
+          a(class='email', href='mailto:' + contact.email) !{contact.email}
+        p= "Phone Number: "
+          a(class='phone_number', href='tel:' + contact.phone_number) !{contact.phone_number}
 
-  section#links
-    div.links_div
-      h2= "Links"
-      ul.links_ul
-        each link in links
-          li
-            img(src=link.media, alt="link_media")
-            |
-            |
-            a(class='link', href=link.url) !{link.name}
+    section#links
+      div.links_div
+        h2= "Links"
+        ul.links_ul
+          each link in links
+            li
+              a(class='link', href=link.url) !{link.name}
 
-  section#skills
-    div.skills_div
-      h2= "Skills"
-      ul.skills_ul
-        each skill in skills
-          li= skill
-      h3= "Languages"
-      ul.languages_ul
-        each language in languages
-          li= language
+    section#skills
+      div.skills_div
+        h2= "Skills"
+        ul.skills_ul
+          each skill in skills
+            li= skill
+        h3= "Languages"
+        ul#languages.languages_ul
+          each language in languages
+            li= language
 
-  section#projects
-    div.projects_div
-      h2= "Projects"
-      each project in projects
-        div.project_div
-          h4= project.name
-          p= project.description
-          ul.project_ul
-            each detail in project.details
-              li= detail
-          div.project_links
-            a(class='github', href=project.links.github) GitHub
-            |
-            |
-            a(class='open', href=project.links.view) Open
+    section#projects
+      div.projects_div
+        h2= "Projects"
+        each project in projects
+          div.project_div
+            h4= project.name
+            p= project.description
+            ul.project_ul
+              each detail in project.details
+                li= detail
+            div.project_links
+              a(class='github', href=project.links.github) GitHub
+              |
+              ||
+              |
+              a(class='open', href=project.links.view) Open
 
-  section#education
-    div.education_div
-      h2= "Education"
-      each school in education
-        div.school_div
-          h4= school.school_name
-          small= school.location.city + ', ' + school.location.state[1]
-          p= school.major
-          small= school.start_date + ' - ' + school.end_date
-          if school.completed_credits != 'N/A'
-            p= "Completed " + school.completed_credits + " Credits"
-          ul.school_ul
-            each description in school.description
-              li= description
+    section#education
+      div.education_div
+        h2= "Education"
+        each school in education
+          div.school_div
+            h4= school.school_name
+            small= school.location.city + ', ' + school.location.state[1]
+            p= school.major
+            small= school.start_date + ' - ' + school.end_date
+            if school.completed_credits != 'N/A'
+              p= "Completed " + school.completed_credits + " Credits"
+            ul.school_ul
+              each description in school.description
+                li= description
 
-  section#certificates
-    div.certificates_div
-      h2= "Certificates"
-      each certificate in certificates
-        div.certificate_div
-          h4
-            a(class="url", href=certificate.url) !{certificate.name}
-          small= "Issue Date: " + certificate.issue_date
-          p= "Issuing Organization : " + certificate.issuing_organization
-          a(class="media", href=certificate.media) Certificate
+    section#certificates
+      div.certificates_div
+        h2= "Certificates"
+        each certificate in certificates
+          div.certificate_div
+            h4
+              a(class="url", href=certificate.url) !{certificate.name}
+            small= "Issue Date: " + certificate.issue_date
+            p= "Issuing Organization : " + certificate.issuing_organization
+            a(class="media", href=certificate.media) Certificate
 
-  section#employment
-    div.employment_div
-      h2= "Employment"
-      each job in employment
-        div.job_div
-          h4
-            a(class='job', href=job.url) !{job.name}
-          p= job.job_title
-          small= job.location.city + ', ' + job.location.state[1]
-          br
-          small= job.start_date + ' - ' + job.end_date
-          ul.job_ul
-            each description in job.description
-              li= description
+    section#employment
+      div.employment_div
+        h2= "Employment"
+        each job in employment
+          div.job_div
+            h4
+              a(class='job', href=job.url) !{job.name}
+            p= job.job_title
+            small= job.location.city + ', ' + job.location.state[1]
+            br
+            small= job.start_date + ' - ' + job.end_date
+            ul.job_ul
+              each description in job.description
+                li= description
 
-  section#resume
-    div.resume_div
-      h2= "Resume"
-      a(class='resume', href=resume.pdf) PDF
-      |
-      |
-      a(class='resume', href=resume.doc) Doc
+    section#resume
+      div.resume_div
+        h2= "Resume"
+        a(class='resume', href=resume.pdf) PDF
+        |
+        ||
+        |
+        a(class='resume', href=resume.doc) DOC

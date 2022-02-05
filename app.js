@@ -9,6 +9,7 @@ const app = express();
 const port = 3000;
 app.set('view engine', 'pug');
 app.use(pretty({ query: 'pretty' }));
+app.use('/favicon.ico', express.static('sources/favicon_io/favicon.ico'))
 
 const raw = fs.readFileSync(path.join(__dirname + '/sources/portfolio.json'));
 const portfolio = JSON.parse(raw);
