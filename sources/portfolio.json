@@ -167,6 +167,20 @@
       "start_date": "June 2021",
       "end_date": "August 2021",
       "url": "https://www.forbes.com/"
+    },
+    {
+      "name": "Atlassian Corporation Plc",
+      "job_title": "Software Engineer",
+      "location": {
+        "city": "New York City",
+        "state": ["New York", "NY"],
+        "country": ["United States", "USA"],
+        "remote": true
+      },
+      "description": [],
+      "start_date": "April 2022",
+      "end_date": "Present",
+      "url": "https://www.atlassian.com/"
     }
   ],
   "resume": {
