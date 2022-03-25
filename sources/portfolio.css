@@ -9,6 +9,7 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
   --body-width: 500px;
   --hover: rgb(185, 35, 35);
   --highlight: rgb(0, 174, 255);
+  --border: rgb(153, 153, 153);
 }
 
 *, *:before, *:after {
@@ -28,6 +29,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: var(--text-color);
     background-color: var(--background-color);
+    margin-left: 150px;
 }
 
 /* Common */
@@ -51,7 +53,35 @@ header {
 }
 
 /* Nav */
+nav {
+    width: 100px;
+    position: fixed;
+    top: 25px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: var(--background-color);
+    border-top: 1px solid var(--border);
+}
+
+.logo {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    font-weight: 600;
+    background-color: var(--border);
+    color: var(--background-color);
+    border-right: 1px solid var(--border);;
+    border-bottom: 1px solid var(--border);
+}
+
 .nav_ul {
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -59,26 +89,24 @@ header {
     list-style-type: none;
     align-items: center;
     padding: 0 !important;
-    margin: 20px 0 0 0 !important;
+    margin: 0 !important;
 }
 
 .nav_ul li {
     font-size: 12px;
-    width: 20%;
+    width: 100%;
     height: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid rgb(153, 153, 153);
+    border-bottom: 1px solid var(--border);;
 }
 
 .nav_ul li a {
     text-decoration: unset;
     color: var(--text-color);
 }
-
-/* Main */
 
 /* Sections */
 section {
@@ -116,18 +144,19 @@ section {
 /*
   Footer
 */
+
 footer .json {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 10px;
-    width: 60px;
+    width: 100px;
     height: 30px;
     background-color: var(--highlight);
     color: var(--background-color);
     position: fixed;
     bottom: 50px;
-    right: 0;
+    left: 0;
 }
 
 footer a:hover {
@@ -137,9 +166,27 @@ footer a:hover {
 /*
     Media Screen <= 500px
 */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
+    body {
+        margin-left: 0;
+    }
+
+    nav {
+        width: 100%;
+        position: unset;
+        flex-direction: column;
+    }
+
+    .nav_ul {
+        width: 100%;
+    }
+
     .nav_ul li {
         width: 50%;
+    }
+
+    .json {
+        display: none !important;
     }
 
     section {

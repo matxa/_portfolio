@@ -10,6 +10,7 @@ head
 body
   header
     nav
+      span.logo @Matxa
       ul.nav_ul
         li
           a(href="#about") About
@@ -35,7 +36,7 @@ body
   main
     section#about
       div.about_div
-        img(src=about.profile_picture, alt="marcelo", class="profile_picture")
+        //- img(src=about.profile_picture, alt="marcelo", class="profile_picture")
         h2= about.welcome_message
         p= about.description
 
@@ -134,5 +135,6 @@ body
         a(class='resume', href=resume.doc) DOC
 
   footer
-    p Marcelo Ramos-Martins &#169; 2022
+    - const year = new Date().getFullYear();
+    p= "Marcelo Ramos-Martins © " + year
     a(href="/api?pretty").json View API
