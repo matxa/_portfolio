@@ -114,9 +114,16 @@ section {
     flex-direction: column;
     justify-content: center;
     margin: 15px 0;
-    border-bottom: 1px solid var(--text-color);
-    padding-bottom: 50px;
+    padding: 0 0 25px 50px;
     width: 100%;
+}
+
+section:nth-child(odd) {
+    background-color: #e8e8e8;
+}
+
+section:first-of-type {
+    background-color: var(--background-color);
 }
 
 /* About */
@@ -189,9 +196,6 @@ footer a:hover {
         display: none !important;
     }
 
-    section {
-        padding: 10px;
-    }
 }
 
 @media screen and (max-height: 410px) {
